@@ -5,7 +5,7 @@ from discord.ext import commands
 from ..models import AllowedGuild, WhitelistSettings
 
 
-OWNER_ID = 667845997522845728 # Replace with your own user ID
+OWNER_ID = 1234567890 # Replace with your own user ID
 
 
 class whitelist(commands.Cog):
