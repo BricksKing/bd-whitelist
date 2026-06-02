@@ -6,7 +6,7 @@ description = "A package allowing the bot to be exclusive to specefic servers/gu
 license = "MIT"  # replace with your own license
 license-files = ["LICENSE"]
 authors = [
-    { name = "bricksking" },
+    { name = "bricksking", email = bricksking628@gmail.com },
 ]
 readme = "README.md"
 
