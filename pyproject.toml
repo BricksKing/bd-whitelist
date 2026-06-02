@@ -1,0 +1,18 @@
+[project]
+name = "Whitelist"
+version = "0.0.1"
+
+description = "A package allowing the bot to be exclusive to specefic servers/guilds"
+license = "MIT"  # replace with your own license
+license-files = ["LICENSE"]
+authors = [
+    { name = "bricksking" },
+]
+readme = "README.md"
+
+dependencies = [
+    # you can require a specific version of ballsdex here
+    "ballsdex>=3.0.0",
+]
+
+Homepage = "https://github.com/BricksKing/bd-whitelist"
