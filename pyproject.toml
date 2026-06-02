@@ -10,10 +10,7 @@ authors = [
 ]
 readme = "README.md"
 
-dependencies = [
-    # you can require a specific version of ballsdex here
-    "ballsdex>=3.0.0",
-]
+dependencies = []
 
 [project.urls]
 
