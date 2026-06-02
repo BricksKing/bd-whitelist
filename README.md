@@ -6,7 +6,7 @@ A way to make the [BallsDex](https://github.com/Ballsdex-Team/BallsDex-DiscordBo
 Add this to your `config/extra.toml` file
 ```diff
 [[ballsdex.packages]]
-location = "git+https://github.com/BricksKing/bd-whitelist.git==0.0.1"
+location = "git+https://github.com/BricksKing/bd-whitelist.git"
 path = "whitelist"
 enabled = true
 ```
