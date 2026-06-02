@@ -1,5 +1,5 @@
 [project]
-name = "Whitelist"
+name = "whitelist"
 version = "0.0.1"
 
 description = "A package allowing the bot to be exclusive to specefic servers/guilds"
