@@ -5,9 +5,6 @@ from discord.ext import commands
 from ..models import AllowedGuild, WhitelistSettings
 
 
-OWNER_ID = 1234567890 # Replace with your own user ID
-
-
 class whitelist(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -24,7 +21,7 @@ class whitelist(commands.Cog):
         interaction: discord.Interaction,
         enabled: bool,
     ):
-        if interaction.user.id != OWNER_ID:
+        if not await self.bot.is_owner(interaction.user):
             return await interaction.response.send_message(
                 "Only the bot owner can use this command.",
                 ephemeral=True,
@@ -72,7 +69,7 @@ class whitelist(commands.Cog):
         if ctx.guild is None:
             return True
 
-        if ctx.author.id == OWNER_ID:
+        if await self.bot.is_owner(ctx.author):
             return True
 
         allowed = await self.is_guild_allowed(ctx.guild.id)
